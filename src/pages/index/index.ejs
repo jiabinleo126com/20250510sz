@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<%const {yjjb}=require(`./mock.json`)%>
+
+  <head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <meta content="IE=Edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta content="no-transform" http-equiv="Cache-Control">
+    <meta content="no-siteapp" http-equiv="Cache-Control">
+    <meta content="no-cache" http-equiv="Cache-Control">
+    <meta content="form-action 'self' *.ieduchina.com;" http-equiv="Content-Security-Policy">
+    <meta
+      content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"
+      name="viewport">
+    <meta content="webkit" name="renderer">
+    <meta content="升学论坛,香港教育论坛" name="keywords">
+    <meta
+      content="2025年5月10日，由国际教育网主办的“全球多元化升学论坛·大湾区国际教育名校择校展”在深圳福田圆满落幕。论坛围绕香港多元化教育的优势与特色展开了深入的探讨，并与内地教育进行了比较分析。同时汇聚了众多香港&内地优质国际学校，从Band1精英中学到特色Band2/3学校，从国际名校到港澳子弟学校，涵盖从幼儿园到高中的全学段教育，全面覆盖DSE、AP、IB、A-Level主流国际课程体系，满足不同学术水平、教育预算及升学路径的需求。"
+      name="description">
+    <title>2025全球多元化升学论坛大湾区国际教育名校择校展-香港教育论坛 - 国际教育网</title>
+    <link href="//m.ieduchina.com/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <link href="https://web.sdk.qcloud.com/player/tcplayer/release/v4.5.4/tcplayer.min.css" rel="stylesheet">
+    <link href="https://www.ieduchina.com/statics/common/css/swiper.min.css" rel="stylesheet">
+    <script type="text/javascript">
+      if (/Android|webOS|iPhone|iPod|BlackBerry|IEMobile|OperaMini/i.test(navigator.userAgent)) {
+        window.location.href = "http://192.168.6.26/wap.html";
+      }
+    </script>
+  </head>
+
+  <body>
+    <img src="https://www.ieduchina.com/statics/image/c14def69.jpg" width="0" height="0" style="display:none;">
+    <%=require(`@cs/header/index.ejs`)()%>
+    <section>
+      <%=require(`@cs/banner/index.ejs`)()%>
+      <%=require(`@cs/lthg/index.ejs`)()%>
+      <%=require(`@cs/ztyj/index.ejs`)({data:yjjb})%>
+      <%=require(`@cs/videos/index.ejs`)()%>
+      <%=require(`@cs/hdxc/index.ejs`)()%>
+      <%=require(`@cs/school/index.ejs`)()%>
+      <%=require(`@cs/ltxw/index.ejs`)()%>
+      <%=require(`@cs/wqhg/index.ejs`)()%>
+    </section>
+    <%=require(`@cs/footer-new/index.ejs`)()%>
+    <%=require(`@cs/rightnav/index.ejs`)()%>
+    <%=require(`@cs/mask/index.ejs`)()%>
+    <script src="https://cloudcache.tencentcs.com/qcloud/video/dist/tcadapter.1.0.0.min.js"></script>
+    <script src="https://web.sdk.qcloud.com/player/tcplayer/release/v4.5.4/libs/TXLivePlayer-1.2.3.min.js"></script>
+    <script src="https://web.sdk.qcloud.com/player/tcplayer/release/v4.5.4/libs/hls.min.1.1.5.js"></script>
+    <script src="https://web.sdk.qcloud.com/player/tcplayer/release/v4.5.4/libs/flv.min.1.6.3.js"></script>
+    <script src="https://web.sdk.qcloud.com/player/tcplayer/release/v4.5.4/libs/dash.all.min.4.4.1.js"></script>
+    <script src="https://web.sdk.qcloud.com/player/tcplayer/release/v4.5.4/tcplayer.v4.5.4.min.js"></script>
+    <script src="https://www.ieduchina.com/statics/js/jquery-3.2.1.min.js"></script>
+    <script src="https://www.ieduchina.com/statics/common/js/swiper.min.js"></script>
+    <script src="https://www.ieduchina.com/statics/js/layer.js"></script>
+    <script src="https://www.ieduchina.com/statics/share/jquery.share.min.js"></script>
+    <script src="https://www.ieduchina.com/topic/tgFrom.js?t=2025" defer="defer"></script>
+  </body>
+</html>

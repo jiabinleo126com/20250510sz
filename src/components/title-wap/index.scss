@@ -1,0 +1,24 @@
+.title {
+    background: url("./标题@1x.png") center top/380rem 38rem no-repeat;
+    text-align: center;
+
+    h2 {
+        span {
+            font-weight: bold;
+            font-size: 36rem;
+            // color: var(--primary);
+            background: linear-gradient(to right,
+                    #FCE8CF 0%,
+                    #EDB773 40%);
+            background-clip: text;
+            color: transparent;
+        }
+    }
+
+    p {
+        font-size: 22rem;
+        color: #999999;
+        letter-spacing: 11rem;
+        margin-top: 8rem;
+    }
+}

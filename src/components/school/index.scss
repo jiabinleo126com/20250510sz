@@ -1,0 +1,37 @@
+.school {
+    padding: 60px 0;
+    background-color: var(--white);
+
+    ul {
+        margin: 60px auto 0;
+        width: 1200px;
+        display: flex;
+        flex-wrap: wrap;
+
+        li {
+            width: 227px;
+            margin-bottom: 32px;
+            margin-right: 16px;
+
+            &:nth-of-type(5n) {
+                margin-right: 0;
+            }
+
+            img {
+                width: 227px;
+                height: 90px;
+                object-fit: cover;
+                object-position: center;
+            }
+
+            p {
+                font-weight: 400;
+                font-size: 16px;
+                color: #666666;
+                line-height: 23px;
+                padding-top: 12px;
+                text-align: center;
+            }
+        }
+    }
+}

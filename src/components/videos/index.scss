@@ -1,0 +1,101 @@
+.videos {
+    width: 100%;
+    height: 720px;
+    min-width: 1200px;
+    background: #101E5D center/1920px 720px no-repeat;
+    padding: 70px 0
+}
+
+.videos .con {
+    width: 1200px;
+    margin: 70px auto 0;
+    overflow: hidden
+}
+
+.videos .con .case-wrap {
+    position: relative
+}
+
+.videos .con .case-wrap .swiper-container-horizontal>.swiper-pagination-bullets,
+.videos .con .case-wrap .swiper-pagination-custom,
+.videos .con .case-wrap .swiper-pagination-fraction {
+    bottom: 0px
+}
+
+.videos .con .case-wrap .swiper-slide.swiper-slide-active .list p {
+    opacity: 1
+}
+
+.videos .con .case-wrap .swiper-slide .swiper-slide-shadow-left {
+    bottom: 40px;
+    height: auto
+}
+
+.videos .con .case-wrap .swiper-slide .swiper-slide-shadow-right {
+    bottom: 40px;
+    height: auto
+}
+
+.videos .con .case-wrap .swiper-slide {
+    width: 754px;
+    height: 424px;
+}
+
+.videos .con .case-wrap .swiper-slide .video-wrap {
+    position: relative;
+    width: 754px;
+    height: 424px;
+    padding-bottom: 40px
+}
+.videos .con .case-wrap .swiper-slide .video-wrap img{
+    object-fit: cover;
+}
+
+.videos .con .case-wrap .swiper-slide .video-wrap #player_s {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 754px;
+    height: 424px;
+    border-radius: 10px;
+    background-color: transparent;
+    object-fit: cover;
+}
+
+.videos .con .case-wrap .swiper-slide .list p {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+    padding-top: 17px;
+    opacity: 0
+}
+
+.videos .con .case-wrap .swiper-slide.swiper-slide-active .mask {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 100;
+    right: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0)
+}
+
+.videos .con .case-wrap .swiper-button-prev {
+    background-image: url(https://www.ieduchina.com/topic/2024/shenzhen/images/e5b61a34.png);
+    width: 70px;
+    height: 70px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: -52px
+}
+
+.videos .con .case-wrap .swiper-button-next {
+    background-image: url(https://www.ieduchina.com/topic/2024/shenzhen/images/bec9856b.png);
+    width: 70px;
+    height: 70px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: -52px
+}

@@ -1,0 +1,25 @@
+<div class="ztyj">
+	<%=require(`../title/index.ejs`)({cn:"主题演讲",en:"Keynote speech"})%>
+	<div class="yj">
+		<%data.forEach(item=>{%>
+			<%if(item.link){%>
+				<a href="<%=item.link%>" rel="nofollow" target="_blank">
+					<span>演讲主题</span>
+					<h3><%=item.title1%></h3>
+					<h4><%=item.title2%></h4>
+					<p><%=item.name%></p>
+					<img src="<%=require(`./images/${item.img}@1x.png`)%>" alt="item.name">
+				</a>
+			<%}else{%>
+				<a>
+					<span>演讲主题</span>
+					<h3><%=item.title1%></h3>
+					<h4><%=item.title2%></h4>
+					<p><%=item.name%></p>
+					<img src="<%=require(`./images/${item.img}@1x.png`)%>" alt="item.name">
+				</a>
+			<%}%>
+		<%})%>
+	</div>
+</div>
+

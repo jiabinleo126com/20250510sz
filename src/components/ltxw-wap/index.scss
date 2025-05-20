@@ -1,0 +1,87 @@
+.ltxw {
+    padding: 60rem 30rem;
+    background-color: var(--white);
+}
+
+.ltxw .image {
+    padding-bottom: 20rem;
+    margin-top: 60rem;
+    text-align: center;
+    font-size: 0;
+}
+
+.ltxw .image p {
+    font-weight: 500;
+    font-size: 32rem;
+    color: #333333;
+    text-align: center;
+    padding: 30rem 0;
+}
+
+.ltxw .image img {
+    width: 670rem;
+    height: 461rem;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: center;
+    object-position: center;
+}
+
+.ltxw .desc {
+    margin-top: 30rem;
+    font-size: 0;
+}
+
+.ltxw .desc span {
+    position: relative;
+    display: block;
+    width: 235rem;
+    height: 48rem;
+    line-height: 48rem;
+    background-color: var(--primary);
+    font-size: 26rem;
+    padding: 0 23rem;
+    font-weight: 500;
+    color: #FFFFFF;
+}
+
+.ltxw .desc span::after {
+    position: absolute;
+    right: -29rem;
+    bottom: -19rem;
+    width: 48rem;
+    height: 61rem;
+    background-color: var(--white);
+    content: "";
+    -webkit-transform: rotateZ(34deg);
+    transform: rotateZ(34deg);
+}
+
+.ltxw .desc .links {
+    padding: 10rem 0;
+}
+
+.ltxw .desc .links a {
+    font-size: 26rem;
+    font-weight: bold;
+    color: var(--primary);
+    line-height: 56rem;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.ltxw .desc .links a p {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    font-size: 26rem;
+    font-weight: 400;
+    color: #333333;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

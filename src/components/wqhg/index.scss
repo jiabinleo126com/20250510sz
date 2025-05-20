@@ -1,0 +1,141 @@
+body section .wqhg {
+  padding: 60px 0;
+  background-color: var(--white);
+}
+
+body section .wqhg ::-webkit-scrollbar {
+  background-color: #fefefe;
+  width: 10px
+}
+
+body section .wqhg ::-webkit-scrollbar-thumb {
+  border-radius: 13px;
+  background-color: var(--primary);
+  border: solid 1px var(--primary);
+  cursor: pointer
+}
+
+body section .wqhg .con {
+  width: 1200px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between
+}
+
+body section .wqhg .con img {
+  width: 260px;
+  height: 200px
+}
+
+body section .wqhg h3 {
+  text-align: center;
+  margin-top: 70px
+}
+
+body section .wqhg h3 span {
+  font-size: 26px;
+  font-weight: 500;
+  color: var(--primary);
+  position: relative;
+  text-align: center
+}
+
+body section .wqhg h3 span::after,
+body section .wqhg h3 span:before {
+  content: "--";
+  position: absolute;
+  top: 0;
+  font-size: 26px;
+  font-weight: 500;
+  color: var(--primary);
+  line-height: 35px
+}
+
+body section .wqhg h3 span::before {
+  left: -45px
+}
+
+body section .wqhg h3 span::after {
+  right: -45px
+}
+
+body section .wqhg p.tip {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  color: #666;
+  padding: 25px 0 50px
+}
+
+body section .wqhg .textwrap {
+  position: relative;
+  width: 1200px;
+  height: 360px;
+  margin: 0 auto
+}
+
+body section .wqhg .textwrap::before,
+body section .wqhg .textwrap::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 1170px;
+  height: 6px;
+  background: #FFF;
+  z-index: 10
+}
+
+body section .wqhg .textwrap::before {
+  top: 0
+}
+
+body section .wqhg .textwrap::after {
+  bottom: 0
+}
+
+body section .wqhg .textwrap .text {
+  width: 1200px;
+  height: 360px;
+  background: #FFF;
+  overflow-y: scroll
+}
+
+body section .wqhg .textwrap .text p {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 400;
+  color: #333;
+  line-height: 38px
+}
+
+body section .wqhg .textwrap .text p a {
+  font-size: 20px;
+  font-weight: 400;
+  color: #333
+}
+
+body section .wqhg .textwrap .text p b {
+  font-weight: bold;
+  display: inline-block;
+  padding-top: 40px;
+  padding-bottom: 14px
+}
+
+body section .wqhg .textwrap .text p:nth-of-type(1) b {
+  padding-bottom: 0;
+  padding-top: 35px
+}
+
+body section .wqhg .textwrap .text p:nth-of-type(2) b {
+  padding-top: 0
+}
+
+body section .wqhg .textwrap .text p:last-of-type {
+  padding-bottom: 36px
+}

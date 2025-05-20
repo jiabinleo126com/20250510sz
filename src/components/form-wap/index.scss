@@ -1,0 +1,121 @@
+.form {
+    background: var(--white);
+    padding: 40rem 0;
+
+    form {
+        margin: 0 30rem;
+        background: #FFF;
+        box-shadow: 0 0 30rem 0 rgba(141, 75, 38, 0.1);
+        border-radius: 20rem;
+        padding: 0 30rem;
+
+        position: relative;
+
+        &::before {
+            position: absolute;
+            content: "";
+            top: 405rem;
+            right: 55rem;
+            z-index: 10;
+            width: 24rem;
+            height: 14rem;
+            -o-object-position: center;
+            object-position: center;
+            -o-object-fit: contain;
+            object-fit: contain;
+            pointer-events: none;
+            background: url(//m.ieduchina.com/topic/2024/shenzhen/images/83674940.png) center/contain no-repeat
+        }
+    }
+
+    form p {
+        font-size: 38rem;
+        font-weight: bold;
+        color: var(--primary);
+        text-align: center;
+        padding: 40rem 0 20rem
+    }
+
+    form input {
+        height: 90rem;
+        width: 100%;
+        background: #f8f8f8;
+        border-radius: 10rem;
+        margin-top: 30rem;
+        font-size: 32rem;
+        font-weight: 400;
+        color: #333;
+        padding: 0 20rem;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        outline: none;
+        -webkit-box-shadow: 0 0 0 1000px #f8f8f8 inset;
+        box-shadow: 0 0 0 1000px #f8f8f8 inset
+    }
+
+    form input::-webkit-input-placeholder {
+        font-size: 32rem;
+        color: #999
+    }
+
+    form input::-moz-placeholder {
+        font-size: 32rem;
+        color: #999
+    }
+
+    form input:-ms-input-placeholder {
+        font-size: 32rem;
+        color: #999
+    }
+
+    form input::-ms-input-placeholder {
+        font-size: 32rem;
+        color: #999
+    }
+
+    form input::placeholder {
+        font-size: 32rem;
+        color: #999
+    }
+
+    form select {
+        height: 90rem;
+        width: 100%;
+        background: #f8f8f8;
+        border-radius: 10rem;
+        margin-top: 30rem;
+        font-size: 32rem;
+        font-weight: 400;
+        color: #999;
+        padding: 0 20rem;
+        border: none;
+        outline: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none
+    }
+
+    form select:-internal-autofill-previewed,
+    form select:-internal-autofill-selected {
+        -webkit-text-fill-color: #000;
+        -webkit-transition: background-color 5000s ease-out .5s;
+        transition: background-color 5000s ease-out .5s
+    }
+
+    form button {
+        margin-top: 40rem;
+        width: 100%;
+        height: 90rem;
+        background: var(--primary);
+        box-shadow: 0 4rem 10rem 0 rgba(16, 30, 93, 0.3);
+        border-radius: 10rem;
+        font-size: 36rem;
+        font-weight: 500;
+        color: #fff;
+        border: none;
+        outline: none;
+        margin-bottom: 57rem;
+        cursor: pointer
+    }
+}

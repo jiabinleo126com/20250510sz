@@ -1,0 +1,85 @@
+.ztyj {
+    padding: 60px 0;
+    // background: var(--white) url("./主题演讲背景@1x.png") center 10px/cover no-repeat;
+    // background: linear-gradient(180deg, #101E5D 0%, #162A87 100%);
+    background: #101E5D url("./蒙版组\ 1@1x.png") center -24px/contain no-repeat;
+
+    .yj {
+        width: 1200px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin: 0 auto;
+
+        a {
+            display: block;
+            position: relative;
+            width: 580px;
+            height: 240px;
+            background: #FFFFFF url("./人物背景@1x.png") center top/contain no-repeat;
+            border-radius: 12px 12px 12px 12px;
+            margin-top: 105px;
+            padding: 40px 0 0 32px;
+
+            span {
+                display: block;
+                line-height: 30px;
+                text-align: center;
+                width: 97px;
+                height: 30px;
+                border-radius: 15px 15px 15px 0px;
+                background: linear-gradient(90deg, #FCE8CF 0%, #EDB773 100%), #101E5D;
+                font-size: 16px;
+                font-weight: 350;
+                color: #101E5D;
+            }
+
+            h3 {
+                font-size: 24px;
+                font-weight: bold;
+                color: #EDB874;
+                padding: 17px 0 17px;
+            }
+
+            h4 {
+                font-size: 24px;
+                font-weight: bold;
+                color: #FFFFFF;
+
+            }
+
+            p {
+                font-weight: bold;
+                font-size: 24px;
+                color: #EDB874;
+                line-height: 35px;
+
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                height: 60px;
+                font-weight: 400;
+                font-size: 20px;
+                color: #333333;
+                line-height: 60px;
+                padding-left: 32px;
+            }
+
+            img {
+                position: absolute;
+                right: 0;
+                bottom: 60px;
+                width: 182px;
+                height: 225px;
+                object-fit: contain;
+                object-position: bottom;
+            }
+
+
+            &:nth-of-type(-n + 2) {
+                margin-top: 80px;
+            }
+        }
+    }
+}

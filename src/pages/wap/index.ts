@@ -1,0 +1,15 @@
+import '@common/css/reset.scss';
+import '@cs/header-wap/index.ts';
+import '@cs/banner-wap/index.ts';
+import '@cs/lthg-wap/index.ts';
+import '@cs/title-wap/index.ts';
+import '@cs/ztyj-wap/index.ts';
+import '@cs/videos-wap/index.ts';
+import '@cs/hdxc-wap/index.ts';
+import '@cs/school-wap/index.ts';
+import '@cs/ltxw-wap/index.ts';
+import '@cs/wqhg-wap/index.ts';
+import '@cs/form-wap/index.ts';
+import '@cs/footer-wap/index.ts';
+import '@cs/footer-nav-wap/index.ts';
+import './index.scss';

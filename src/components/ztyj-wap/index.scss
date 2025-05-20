@@ -1,0 +1,90 @@
+.ztyj {
+    padding: 40rem 0;
+    background: var(--primary) url("./蒙版组 1@1x.png") center top/contain no-repeat;
+
+    .yj {
+        width: 670rem;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin: 0 auto;
+
+        a {
+            display: block;
+            position: relative;
+            width: 670rem;
+            height: 277rem;
+            background: url("./人物背景@1x.png") center top/contain no-repeat;
+            border-radius: 12rem;
+            margin-top: 93rem;
+            padding: 37rem 0 0 27rem;
+
+
+            span {
+                color: var(--primary);
+                display: block;
+                line-height: 30rem;
+                text-align: center;
+                width: 97rem;
+                height: 30rem;
+                border-radius: 15rem 15rem 15rem 0;
+                background: linear-gradient(90deg, #FCE8CF 0%, #EDB773 100%), #101E5D;
+                font-size: 16rem;
+                font-weight: 350;
+            }
+
+            h3 {
+                font-size: 24rem;
+                font-weight: bold;
+                color: #EDB874;
+                padding: 20rem 0;
+            }
+
+            h4 {
+                font-size: 24rem;
+                font-weight: bold;
+                color: #FFFFFF;
+                padding-top: 10rem;
+            }
+
+            p {
+                background-color: white;
+                font-weight: bold;
+                font-size: 29rem;
+                color: var(--primary);
+                line-height: 40rem;
+                position: absolute;
+                bottom: 2rem;
+                left: 0;
+                right: 0;
+                height: 67rem;
+                font-weight: 400;
+                font-size: 29rem;
+                color: #333333;
+                line-height: 67rem;
+                padding-left: 37rem;
+                border-radius: 0 0 12rem 12rem;
+                margin-top: -1rem;
+
+                font {
+                    font-size: 26rem;
+                }
+            }
+
+            img {
+                position: absolute;
+                right: 0;
+                bottom: 69rem;
+                width: 205rem;
+                height: 254rem;
+                object-fit: contain;
+                object-position: bottom;
+            }
+
+
+            &:nth-of-type(-n + 2) {
+                margin-top: 104rem;
+            }
+        }
+    }
+}

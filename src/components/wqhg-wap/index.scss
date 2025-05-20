@@ -1,0 +1,68 @@
+.wqhg {
+    padding: 60rem 30rem;
+    background-color: var(--white);
+}
+
+.wqhg ::-webkit-scrollbar {
+    background-color: #fefefe;
+    width: 20rem;
+}
+
+.wqhg ::-webkit-scrollbar-thumb {
+    border-radius: 13rem;
+    background-color: var(--primary);
+    border: solid 1px var(--primary);
+    cursor: pointer;
+}
+
+.wqhg .tip {
+    font-size: 28rem;
+    font-weight: 400;
+    color: #333333;
+    text-align: center;
+    padding: 30rem 0 38rem;
+}
+
+.wqhg .textwrap {
+    width: 100%;
+    height: 400rem;
+}
+
+.wqhg .textwrap .text {
+    width: 100%;
+    height: 400rem;
+    background-color: #FFFFFF;
+    overflow-y: scroll;
+}
+
+.wqhg .textwrap .text p {
+    text-align: center;
+    font-size: 22rem;
+    font-weight: 400;
+    color: #666666;
+    line-height: 28rem;
+    padding-top: 56rem;
+}
+
+.wqhg .textwrap .text p a {
+    font-size: 22rem;
+    font-weight: 400;
+    color: #333333;
+}
+
+.wqhg .textwrap .text p b {
+    font-weight: bold;
+    display: inline-block;
+}
+
+.wqhg .textwrap .text p:nth-of-type(1) b {
+    padding-bottom: 0;
+}
+
+.wqhg .textwrap .text p:nth-of-type(2) b {
+    padding-top: 0;
+}
+
+.wqhg .textwrap .text p:last-of-type {
+    padding-bottom: 36rem;
+}

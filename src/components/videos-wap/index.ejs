@@ -1,0 +1,35 @@
+<%const videos=[
+  {
+    image:"企业微信截图_17297303613670",
+    video:"https://1313547163.vod2.myqcloud.com/62c522c4vodcq1313547163/1418ac7b1397757895875141744/gg39SvFd8fMA.mp4"
+  },
+  {
+    image:"企业微信截图_17297304757708",
+    video:"https://1313547163.vod2.myqcloud.com/62c522c4vodcq1313547163/53d728231397757895743987461/Btnr6B9OJSwA.mp4"
+  },
+  {
+    image:"企业微信截图_17296875669608",
+    video:"https://1313547163.vod2.myqcloud.com/62c522c4vodcq1313547163/2b4b478f1397757895817411304/lePbkmTYRPoA.mp4"
+  },
+  {
+    image:"企业微信截图_17297587639228",
+    video:"https://1313547163.vod2.myqcloud.com/62c522c4vodcq1313547163/a71de3be1397757895958811174/aeS1Avk1qmAA.mp4"
+  },
+  {
+    image:"企业微信截图_17306868207807",
+    video:"https://1313547163.vod2.myqcloud.com/62c522c4vodcq1313547163/5dffc2f31397757896740144714/EW9gUe0PazQA.mp4"
+  }
+]%>
+<div class="jcsp">
+  <%=require(`../title/index.ejs`)({cn:"精彩视频",en:"Wonderful video"})%>
+  <ul>
+    <%videos.forEach(item=>{%>
+    <li><img loading="lazy" alt="" src="<%=require(`./${item.image}.png`)%>" width="190" height="104" value="<%=item.video%>"></li>
+    <%})%>
+  </ul>
+  <div class="btn"><button class="more"><span>展开更多</span></button></div>
+</div>
+<div class="mask" id="mask">
+  <img alt="" src="https://m.ieduchina.com/topic/2024/shenzhen/images/d978f273.png">
+  <video height="405" id="masksp" playsinline preload="auto" value="" webkit-playsinline width="375" poster=""></video>
+</div>

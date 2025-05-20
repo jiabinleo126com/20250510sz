@@ -1,0 +1,124 @@
+body .right-fixed-nav {
+    position: fixed;
+    right: 0;
+    top: 35%;
+    width: 98px;
+    z-index: 100;
+    background-color: var(--primary)
+}
+
+body .right-fixed-nav ul li {
+    position: relative;
+    cursor: pointer;
+    -webkit-transition: all .1s;
+    transition: all .1s;
+    text-align: center;
+    padding: 15px 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+body .right-fixed-nav ul li:hover .right-nav-list {
+    -webkit-transform: scale(1);
+    transform: scale(1)
+}
+
+body .right-fixed-nav ul li:first-of-type .right-nav-list {
+    left: -151px;
+    top: -26px
+}
+
+body .right-fixed-nav ul li:nth-of-type(3) .right-nav-list {
+    left: -151px;
+    top: -10px
+}
+
+body .right-fixed-nav ul li:nth-of-type(4) .right-nav-list {
+    left: -151px;
+    top: -10px
+}
+
+body .right-fixed-nav ul li:last-of-type p.title2 {
+    padding-bottom: 0;
+    border-bottom: none
+}
+
+body .right-fixed-nav ul li>img {
+    width: 44px;
+    height: 44px
+}
+
+body .right-fixed-nav ul li p.title2 {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+    width: 70px;
+    margin: 0 auto;
+    padding-bottom: 14px;
+    border-bottom: solid 1px #fff
+}
+
+body .right-fixed-nav ul li .right-nav-list {
+    border: 1px solid #dcdcdc;
+    position: absolute;
+    font-size: 16px;
+    color: #333;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    -webkit-transform-origin: 100% 50%;
+    transform-origin: 100% 50%;
+    -webkit-transition: -webkit-transform .25s;
+    transition: -webkit-transform .25s;
+    transition: transform .25s;
+    transition: transform .25s, -webkit-transform .25s;
+    background-color: #fff
+}
+
+body .right-fixed-nav ul li .right-nav-list div {
+    display: inline-block;
+    width: 149px;
+    padding-bottom: 5px
+}
+
+body .right-fixed-nav ul li .right-nav-list div img {
+    width: 122px;
+    height: 122px;
+    margin-top: 7px
+}
+
+body .right-fixed-nav ul li .right-nav-list div p {
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+    color: #333;
+    line-height: 15px;
+    margin-top: -4px
+}
+
+// 微信分享
+#share {
+    padding: 6px 0 0 0;
+    .wechat-qrcode {
+        padding-bottom: 0;
+        h4 {
+            text-align: center;
+            font-size: 12px;
+            font-weight: bold;
+            color: #333;
+            line-height: 15px;
+        }
+
+        p {
+            text-align: center;
+            font-size: 12px;
+            font-weight: bold;
+            color: #333;
+            line-height: 18px;
+            padding: 0 5px;
+        }
+        .help{
+            padding-bottom: 0;
+        }
+    }
+}

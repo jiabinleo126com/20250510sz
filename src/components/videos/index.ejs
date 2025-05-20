@@ -1,0 +1,40 @@
+<div class="videos">
+  <%=require(`../title/index.ejs`)({cn:"精彩视频",en:"Wonderful video"})%>
+  <% const video=[
+    {
+      video:"https://1313547163.vod2.myqcloud.com/62c522c4vodcq1313547163/1e1724571397757895882343360/IPp3mEMjymAA.mp4",
+      image:"1,尹浩然"
+    },
+    {
+      video:"https://1313547163.vod2.myqcloud.com/62c522c4vodcq1313547163/1e17ca021397757895882344946/f5h5DRvFY9AA.mp4",
+      image:"5，陳狄安_"
+    },
+    {
+      video:"https://1313547163.vod2.myqcloud.com/62c522c4vodcq1313547163/f32d274e1397757895888678852/kUlnQgAR8GYA.mp4",
+      image:"7，陈颖琛"
+    },
+    {
+      video:"https://1313547163.vod2.myqcloud.com/62c522c4vodcq1313547163/9be041421397757895958370970/TYdStC4zchsA.mp4",
+      image:"4，李伊瑩"
+    },
+    {
+      video:"https://1313547163.vod2.myqcloud.com/62c522c4vodcq1313547163/8ec701d01397757896737225111/CUJItyG8tyUA.mp4",
+      image:"10张紫伶"
+    }
+  ]%>
+  <div class="con">
+    <div class="case-wrap">
+      <div class="case_swiper swiper-container">
+        <div class="swiper-wrapper">
+          <%video.forEach((item)=>{%>
+          <div class="swiper-slide">
+            <div class="video-wrap"><img width="754" height="424" src="<%=require(`./${item.image}.jpg`)%>"  alt="" value="<%=item.video%>"></div>
+          </div>
+          <%})%>
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </div>
+  </div>
+</div>

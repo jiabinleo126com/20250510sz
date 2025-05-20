@@ -1,0 +1,15 @@
+import '@common/css/reset.scss';
+import '@cs/header/index.ts';
+import '@cs/title/index.ts';
+import '@cs/banner/index.ts';
+import '@cs/lthg/index.ts';
+import '@cs/ztyj/index.ts';
+import '@cs/videos/index.ts';
+import '@cs/hdxc/index.ts';
+import '@cs/school/index.ts';
+import '@cs/ltxw/index.ts';
+import '@cs/wqhg/index.ts';
+import '@cs/footer-new/index.ts';
+import '@cs/rightnav/index.ts';
+import '@cs/mask/index.ts';
+import './index.scss';
