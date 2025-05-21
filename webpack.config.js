@@ -52,7 +52,10 @@ const moduleConfig = {
       use: [isdev ? "style-loader" : MiniCssExtractPlugin.loader, {
         loader: "css-loader",
         options: {
-          modules: false
+          modules: false,
+          sassOptions: {
+            quietDeps: true, // 抑制弃用警告
+          },
         }
       }, commonPostcssLoader, "sass-loader"]
     },
@@ -266,34 +269,34 @@ moduleConfig.plugins.push(...htmlTemplate);
 // if (!defaultTemplate) {
 //   moduleConfig.plugins.push(new CopyPlugin({
 //     patterns: [
-      // {
-      //   from: path.resolve(__dirname, `./src/plugins/s2t.js`),
-      //   to: path.resolve(__dirname, `./dist/js`)
-      // },
-      // {
-      //     from: path.resolve(__dirname, `./src/plugins/jquery-3.6.0.min.js`),
-      //     to: path.resolve(__dirname, `./dist/js`)
-      // },
-      // {
-      //     from: path.resolve(__dirname, `./src/plugins/swiper.min.js`),
-      //     to: path.resolve(__dirname, `./dist/js`)
-      // },
-      // {
-      //     from: path.resolve(__dirname, `./src/plugins/swiper.min.css`),
-      //     to: path.resolve(__dirname, `./dist/css`)
-      // },
-      // {
-      //     from: path.resolve(__dirname, `./src/plugins/city.js`),
-      //     to: path.resolve(__dirname, `./dist/js`)
-      // },
-      // {
-      //     from: path.resolve(__dirname, `./src/plugins/tinymce`),
-      //     to: path.resolve(__dirname, `./dist/js`)
-      // },
-      // {
-      //     from: path.resolve(__dirname, `./src/skin`),
-      //     to: path.resolve(__dirname, `./dist/skin/`)
-      // }
+// {
+//   from: path.resolve(__dirname, `./src/plugins/s2t.js`),
+//   to: path.resolve(__dirname, `./dist/js`)
+// },
+// {
+//     from: path.resolve(__dirname, `./src/plugins/jquery-3.6.0.min.js`),
+//     to: path.resolve(__dirname, `./dist/js`)
+// },
+// {
+//     from: path.resolve(__dirname, `./src/plugins/swiper.min.js`),
+//     to: path.resolve(__dirname, `./dist/js`)
+// },
+// {
+//     from: path.resolve(__dirname, `./src/plugins/swiper.min.css`),
+//     to: path.resolve(__dirname, `./dist/css`)
+// },
+// {
+//     from: path.resolve(__dirname, `./src/plugins/city.js`),
+//     to: path.resolve(__dirname, `./dist/js`)
+// },
+// {
+//     from: path.resolve(__dirname, `./src/plugins/tinymce`),
+//     to: path.resolve(__dirname, `./dist/js`)
+// },
+// {
+//     from: path.resolve(__dirname, `./src/skin`),
+//     to: path.resolve(__dirname, `./dist/skin/`)
+// }
 //     ]
 //   }))
 // }

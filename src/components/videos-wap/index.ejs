@@ -1,42 +1,37 @@
 <% const video=[
     {
-      video:"https://1313547163.vod2.myqcloud.com/62c522c4vodcq1313547163/1e1724571397757895882343360/IPp3mEMjymAA.mp4",
-      image:"尹浩然"
+      video:"https://1313547163.vod2.myqcloud.com/62c522c4vodcq1313547163/da9916823560136621078350759/t4KbSuZwfj4A.mp4",
+      image:"企业微信截图_17478156682439"
     },
     {
-      video:"https://1313547163.vod2.myqcloud.com/62c522c4vodcq1313547163/1e17ca021397757895882344946/f5h5DRvFY9AA.mp4",
-      image:"朱嘉添"
+      video:"https://1313547163.vod2.myqcloud.com/62c522c4vodcq1313547163/06ff9e953560136621082956010/cvCepDpN2f0A.mp4",
+      image:"企业微信截图_17478156879195"
     },
     {
-      video:"https://1313547163.vod2.myqcloud.com/62c522c4vodcq1313547163/f32d274e1397757895888678852/kUlnQgAR8GYA.mp4",
-      image:"何廸信"
+      video:"https://1313547163.vod2.myqcloud.com/62c522c4vodcq1313547163/40f75bdd3560136621083108991/riApjwv8VgwA.mp4",
+      image:"企业微信截图_17478157061942"
     },
     {
-      video:"https://1313547163.vod2.myqcloud.com/62c522c4vodcq1313547163/9be041421397757895958370970/TYdStC4zchsA.mp4",
-      image:"卢裕敏刘少龙"
+      video:"https://1313547163.vod2.myqcloud.com/62c522c4vodcq1313547163/e691c91a3560136621085601934/Eccw9eISRIoA.mp4",
+      image:"企业微信截图_174781573316"
     },
     {
-      video:"https://1313547163.vod2.myqcloud.com/62c522c4vodcq1313547163/8ec701d01397757896737225111/CUJItyG8tyUA.mp4",
-      image:"杨菲菲"
+      video:"https://1313547163.vod2.myqcloud.com/62c522c4vodcq1313547163/b79d1d9a3560136621081844542/UiozQPCJqyEA.mp4",
+      image:"企业微信截图_17478157191310"
     },
     {
-      video:"https://1313547163.vod2.myqcloud.com/62c522c4vodcq1313547163/8ec701d01397757896737225111/CUJItyG8tyUA.mp4",
-      image:"刘宇"
-    },
-    {
-      video:"https://1313547163.vod2.myqcloud.com/62c522c4vodcq1313547163/8ec701d01397757896737225111/CUJItyG8tyUA.mp4",
-      image:"张悦"
-    },
-    {
-      video:"https://1313547163.vod2.myqcloud.com/62c522c4vodcq1313547163/8ec701d01397757896737225111/CUJItyG8tyUA.mp4",
-      image:"优秀学员 鲁芊悦"
+      video:"https://1313547163.vod2.myqcloud.com/62c522c4vodcq1313547163/2ea82fe83560136621079666754/B2bVn2sgF6wA.mp4",
+      image:"企业微信截图_17478157449882"
+    },{
+      video:"https://1313547163.vod2.myqcloud.com/62c522c4vodcq1313547163/b7d2463e3560136621081872374/tAMcJ3OFN1IA.mp4",
+      image:"企业微信截图_17478168679021"
     }
 ]%>
 <div class="jcsp">
   <%=require(`../title/index.ejs`)({cn:"精彩视频",en:"Wonderful video"})%>
   <ul>
     <%video.forEach(item=>{%>
-    <li><img loading="lazy" alt="" src="<%=require(`../videos/${item.image}.jpg`)%>" width="190" height="104" value="<%=item.video%>"></li>
+    <li><img loading="lazy" alt="" src="<%=require(`./images/${item.image}.png`)%>" width="190" height="104" value="<%=item.video%>"></li>
     <%})%>
   </ul>
   <div class="btn"><button class="more"><span>展开更多</span></button></div>

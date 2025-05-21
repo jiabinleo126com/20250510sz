@@ -1,4 +1,4 @@
-import './index.scss'
+import './index.less'
 
 declare const layer: any;
 

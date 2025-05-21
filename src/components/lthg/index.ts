@@ -1,6 +1,7 @@
-import './index.scss'
+import './index.less'
 
 declare const TCPlayer: any;
+declare const window: any;
 
-var player = TCPlayer('lthg_video', {});
-player.src($("#lthg_video").attr("value"));
+window.player1 = TCPlayer('lthg_video', {});
+window.player1.src($("#lthg_video").attr("value"));

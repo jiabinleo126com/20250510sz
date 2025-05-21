@@ -1,4 +1,4 @@
-import './index.scss'
+import './index.less'
 
 $(".footer-nav").on("click", "li", function () {
     var img = $(this).find("img");
