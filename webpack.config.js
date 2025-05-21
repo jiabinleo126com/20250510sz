@@ -263,13 +263,13 @@ if (isdev) {
   module.exports = moduleConfig
 }
 moduleConfig.plugins.push(...htmlTemplate);
-if (!defaultTemplate) {
-  moduleConfig.plugins.push(new CopyPlugin({
-    patterns: [
-      {
-        from: path.resolve(__dirname, `./src/plugins/s2t.js`),
-        to: path.resolve(__dirname, `./dist/js`)
-      },
+// if (!defaultTemplate) {
+//   moduleConfig.plugins.push(new CopyPlugin({
+//     patterns: [
+      // {
+      //   from: path.resolve(__dirname, `./src/plugins/s2t.js`),
+      //   to: path.resolve(__dirname, `./dist/js`)
+      // },
       // {
       //     from: path.resolve(__dirname, `./src/plugins/jquery-3.6.0.min.js`),
       //     to: path.resolve(__dirname, `./dist/js`)
@@ -294,6 +294,6 @@ if (!defaultTemplate) {
       //     from: path.resolve(__dirname, `./src/skin`),
       //     to: path.resolve(__dirname, `./dist/skin/`)
       // }
-    ]
-  }))
-}
+//     ]
+//   }))
+// }
