@@ -216,7 +216,7 @@ const moduleConfig = {
       directory: path.join(__dirname, "dist"),
     },
     compress: true,
-    port: 80,
+    port: 3000,
     hot: true,
     open: true,
     allowedHosts: 'all',
